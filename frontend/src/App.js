@@ -15,7 +15,7 @@ class App extends Component{
 			]
 		}
 		
-		let socket = new WebSocket("ws://localhost:3000/results-api/myHandler");
+		let socket = new WebSocket("ws://" + location.host + "/results-api/myHandler");
 		window.a = socket;
 
 		socket.onopen = function(e) {
