@@ -1,0 +1,29 @@
+# Created at 2020-11-29T15:45:53.891
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: null
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:397)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+
+# Created at 2020-11-29T15:45:54.892
+Unexpected IOException with stream: 2020-11-29 15:45:54.891  INFO 93824 --- [           main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 7.1.1 by Redgate
+
+
+# Created at 2020-11-29T15:46:01.929
+Unexpected IOException with stream: 2020-11-29 15:46:01.927  INFO 93824 --- [           main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 7.1.1 by Redgate
+
+
+# Created at 2020-11-29T15:46:08.990
+Unexpected IOException with stream: 2020-11-29 15:46:08.989  INFO 93824 --- [           main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 7.1.1 by Redgate
+
+
+# Created at 2020-11-29T15:46:16.031
+Unexpected IOException with stream: 2020-11-29 15:46:16.030  INFO 93824 --- [           main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 7.1.1 by Redgate
+
+
+# Created at 2020-11-29T15:46:23.063
+Unexpected IOException with stream: 2020-11-29 15:46:23.062  INFO 93824 --- [           main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 7.1.1 by Redgate
+
+

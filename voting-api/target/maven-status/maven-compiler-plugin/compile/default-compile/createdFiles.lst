@@ -1,0 +1,4 @@
+com\vote\backend\model\Result.class
+com\vote\backend\BackendApplication.class
+com\vote\backend\repository\ResultRepository.class
+com\vote\backend\controller\VoteController.class

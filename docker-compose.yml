@@ -1,0 +1,56 @@
+version: '3'
+
+services:
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        buildno: 1
+    container_name: frontend
+    ports:
+      - 3000:3000
+
+  voting-api:
+    build:
+      context: ./voting-api
+      dockerfile: Dockerfile
+      args:
+        buildno: 1
+    container_name: voting-api
+    depends_on:
+      - "postgres"
+      - "rabbitmq"
+
+  worker:
+    build:
+      context: ./worker
+      dockerfile: Dockerfile
+      args:
+        buildno: 1
+    container_name: worker
+    depends_on:
+      - "rabbitmq"
+      - "postgres"
+
+  results-api:
+    build:
+      context: ./results-api
+      dockerfile: Dockerfile
+      args:
+        buildno: 1
+    container_name: results-api
+    depends_on:
+      - "postgres"
+
+  rabbitmq:
+    image: rabbitmq:management
+    restart: always
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: voting
+      POSTGRES_USER: voting
+      POSTGRES_PASSWORD: voting
